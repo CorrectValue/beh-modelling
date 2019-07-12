@@ -39,7 +39,7 @@ public class HealthStats : MonoBehaviour
     // Функция возвращающая ноль, если еда или вода капсулы достигает нуля.
     private int ChangeStats()
         {
-            if(Hungry > 30f)
+            if(Hungry > 0)
             {
                 Hungry -=  0.005f;
                 SM.SetHungry(false);
